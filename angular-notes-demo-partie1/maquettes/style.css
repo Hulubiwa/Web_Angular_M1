@@ -3,6 +3,7 @@
     --txt: #eceff1;
     --accent: #90a4ae;
     --accent-focus: #cfd8dc;
+    --bg2: #158ecb;
 }
 
 html,
@@ -12,9 +13,13 @@ body {
     color: var(--txt);
 }
 
+header{
+    background-color: var(--bg2);
+}
+
 a,
 a:visited {
-    color: var(--accent);
+    color: var(--txt);
     text-decoration: none;
     cursor: pointer;
 }
@@ -65,6 +70,10 @@ nav li a {
 }
 
 .no-note {
+    font-style: italic;
+}
+
+.no-tag {
     font-style: italic;
 }
 
@@ -120,4 +129,60 @@ ul.no-list li {
 .checklist {
     list-style: none;
     padding-left: 0px;
+}
+
+/* Chat gpt */
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.note {
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+h2 {
+    color: var(--bg);
+    margin: 0;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+textarea, input {
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
 }
