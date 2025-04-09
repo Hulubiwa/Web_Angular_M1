@@ -1,0 +1,12 @@
+
+        <a  (click)="dialogAddTag()" class="no-tag">Ajouter un tag</a>
+
+        <ul>
+          @for(tag of tags; track $index) {
+            <li>{{ tag.name }}</li>
+          } @empty {
+            <li>Aucun tag !</li>
+          }
+        </ul>
+
+
