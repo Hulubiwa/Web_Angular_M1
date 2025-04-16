@@ -1,0 +1,7 @@
+.tag {
+    display: flexbox;
+    border-radius: 15px; 
+    color: blueviolet;
+    text-decoration: none;
+    padding: 5px 10px;
+}
